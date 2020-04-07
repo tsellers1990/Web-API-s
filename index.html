@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
+
+    <nav class="navbar navbar-light col-2" style="margin-top: 20px;">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <ul class="list-group col-2" style="float:left">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+
+    <div class="card" style="width: 80rem; float: left; height: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title" id="cityName">City Name</h5>
+          <h6 class="card-subtitle mb-2 text-muted" id="cityTemp">Temperature: </h6>
+          <h6 class="card-subtitle mb-2 text-muted" id="cityHumid">Humidity: </h6>
+          <h6 class="card-subtitle mb-2 text-muted" id="citySpeed">Wind Speed: </h6>
+
+          <div class="card" style="width: 14rem; float: left;">
+            <div class="card-body">
+              <h5 class="card-title" id="dayOneTitle">Day</h5>
+              <div id="dayOneIcon"></div>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayOneTemp">Temperature</h6>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayOneHumid">Humidity</h6>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem; float: left;">
+            <div class="card-body">
+              <h5 class="card-title" id="dayTwoTitle">Day</h5>
+              <div id="dayTwoIcon"></div>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayTwoTemp">Temperature</h6>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayTwoHumid">Humidity</h6>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem; float: left;">
+            <div class="card-body">
+              <h5 class="card-title" id="dayThreeTitle">Day</h5>
+              <div id="dayThreeIcon"></div>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayThreeTemp">Temperature</h6>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayThreeHumid">Humidity</h6>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem; float: left;">
+            <div class="card-body">
+              <h5 class="card-title" id="dayFourTitle">Day</h5>
+              <div id="dayFourIcon"></div>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayFourTemp">Temperature</h6>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayFourHumid">Humidity</h6>
+            </div>
+          </div>
+
+          <div class="card" style="width: 14rem; float: left;">
+            <div class="card-body">
+              <h5 class="card-title" id="dayFiveTitle">Day</h5>
+              <div id="dayFiveIcon"></div>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayFiveTemp">Temperature</h6>
+              <h6 class="card-subtitle mb-2 text-muted" id="dayFiveHumid">Humidity</h6>
+            </div>
+          </div>
+        
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
