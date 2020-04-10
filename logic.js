@@ -32,7 +32,7 @@ var dayFiveHumidEl = $("#dayFiveHumid");
 userSearchBtn.on("click", function(){
     var apiKey = 'b8f4c8845c8df673ba17dd1e03cfa704';
     var userSearchTermEl = $(".form-control");
-    var queryUrl = `http:api.openweathermap.org/data/2.5/forecast?q=${userSearchTermEl.val()}&appid=${apiKey}&units=imperial`;
+    var queryUrl = `https:api.openweathermap.org/data/2.5/forecast?q=${userSearchTermEl.val()}&appid=${apiKey}&units=imperial`;
 
     event.preventDefault();
 
